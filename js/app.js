@@ -5,13 +5,13 @@ console.log(listaSpesa);
 for (let i = 0; i < 9; i++) {
     //creo una variabile dichiaro un elemento da id che voglio utilizzare nell html
     const text = document.getElementById('for');
-    //attaacco in html il valore dell'indice in un list item html    
-    text.innerHtml += "<li>" + (listaSpesa [i]) + "</li>";
+    //attacco in html il valore dell'indice in un list item html    
+    text.innerHTML += "<li>" + (listaSpesa [i]) + "</li>";
 }
 
 let i = 0;
 // condizione i deve essere minore delle length di listaspesa
-while (i <= listaSpesa.length) {
+while (i < listaSpesa.length) {
     //creo una variabile dichiaro un elemento da id che voglio utilizzare nell html
     const textList = document.getElementById('opposite');
     //attaacco in html il valore dell'indice in un list item html  
